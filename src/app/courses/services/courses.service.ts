@@ -15,7 +15,7 @@ private readonly API = '/assets/courses.json';
     return this.httpClient.get<Course[]>(this.API)
     .pipe(
       first(),
-      delay(60000),
+      delay(1000),
       tap(courses => console.log(courses))
     );
   }
